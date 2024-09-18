@@ -6,9 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Wed Sep 18 12:24:16 2024
+# Make data base, printed on Wed Sep 18 14:40:04 2024
 
 # Variables
 
@@ -20,7 +19,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
- 
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -46,7 +44,6 @@ LaunchInstanceID = 64BF3A5F-5C77-4CF9-A6B4-23DFC7A4B319
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
- 
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.kSWZtqlHyz/Listeners
@@ -104,7 +101,6 @@ MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 .VARIABLES := 
 # environment
 TMPDIR = /var/folders/mc/2wjfdchj6vsffbrpfbfgqw4w0000gn/T/
- 
 # automatic
 *F = $(notdir $*)
 # environment
@@ -121,8 +117,6 @@ MFLAGS = -Rrqp
 XPC_SERVICE_NAME = application.com.microsoft.VSCode.1760730.1760736
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -154,7 +148,7 @@ VSCODE_PID = 668
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=69/1024=7%, Rehash=0, Collisions=2/94=2%
+# Load=68/1024=7%, Rehash=0, Collisions=2/93=2%
 
 # Pattern-specific Variable Values
 
@@ -162,16 +156,15 @@ LANG = C
 
 # Directories
 
-# . (device 16777232, inode 4931937): 14 files, no impossibilities.
+# . (device 16777232, inode 4931937): 17 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
- 
 
 all: install format lint test
 #  Command-line target.
@@ -207,7 +200,7 @@ format:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-09-17 18:03:10
+#  Last modified 2024-09-18 14:36:11
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -218,7 +211,7 @@ test:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 14):
-	python -m pytest -vv --nbval -cov=mylib -cov=main test_*.py *.ipynb
+	python -m pytest -vv --nbval-lax -cov=mylib -cov=main test_*.py *.ipynb
 	
 
 # Not a target:
@@ -276,6 +269,6 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Sep 18 12:24:16 2024
+# Finished Make data base on Wed Sep 18 14:40:04 2024
 
  

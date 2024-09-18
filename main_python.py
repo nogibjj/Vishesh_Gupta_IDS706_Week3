@@ -4,6 +4,9 @@ Main Python module for functionality.
 
 import polars as pl
 import matplotlib.pyplot as plt
+import time
+
+start_time = time.time()
 
 
 def read_csv_file(csv_file, encoding="ISO-8859-1", delimiter=";"):
@@ -108,3 +111,7 @@ line_graph_visualisation(
 bar_graph_visualisation(
     pivot_df, "Total Points by Team", "Team", "Total Points", "Position"
 )
+
+end_time = time.time()
+execution_time = end_time - start_time
+print("Execution time:", execution_time)
