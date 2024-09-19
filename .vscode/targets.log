@@ -6,8 +6,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Wed Sep 18 14:40:04 2024
+# Make data base, printed on Wed Sep 18 23:52:26 2024
 
 # Variables
 
@@ -117,6 +118,8 @@ MFLAGS = -Rrqp
 XPC_SERVICE_NAME = application.com.microsoft.VSCode.1760730.1760736
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -144,11 +147,12 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /opt/miniconda3
 # environment
+ 
 VSCODE_PID = 668
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=2/93=2%
+# Load=69/1024=7%, Rehash=0, Collisions=2/94=2%
 
 # Pattern-specific Variable Values
 
@@ -156,9 +160,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777232, inode 4931937): 17 files, no impossibilities.
+# . (device 16777232, inode 4931937): 20 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -269,6 +273,6 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Sep 18 14:40:04 2024
+# Finished Make data base on Wed Sep 18 23:52:26 2024
 
  

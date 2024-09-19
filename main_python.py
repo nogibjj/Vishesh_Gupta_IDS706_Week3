@@ -90,7 +90,9 @@ nba_data_file = read_csv_file("2023-2024 NBA Player Stats - Regular.csv")
 
 # Describe statistics for the 'Age' column
 data_summary, median_table = generalise_data(nba_data_file)
+print("Median")
 print(median_table)
+print("Summary")
 print(data_summary)
 
 grouped_data = aggregate_data(nba_data_file)
