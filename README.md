@@ -63,3 +63,5 @@ The total execution time of the script is displayed at the end of the analysis, 
 
 Although Polars is generally faster than Pandas, the screenshot above shows a result that contradicts this expectation. After discussing this with Prof Gift, I I learned that benchmarking standards are not always rigid. For smaller projects, the performance results for Pandas and Polars might differ from the benchmarks due to how the code is written and executed. Therefore, we should consider that performances can vary based on specific implementation details rather than strictly adhering to general benchmarks.
 
+
+
