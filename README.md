@@ -59,3 +59,7 @@ The module performs the following key tasks:
 
 The total execution time of the script is displayed at the end of the analysis, providing insights into performance for both main_python.py and pandas_main_python.py
 
+<img width="578" alt="Screenshot 2024-09-19 at 7 45 38 AM" src="https://github.com/user-attachments/assets/887be272-fec7-4e49-ad14-79a6c91e2504">
+
+Although Polars is generally faster than Pandas, the screenshot above shows a result that contradicts this expectation. After discussing this with Prof Gift, I I learned that benchmarking standards are not always rigid. For smaller projects, the performance results for Pandas and Polars might differ from the benchmarks due to how the code is written and executed. Therefore, we should consider that performances can vary based on specific implementation details rather than strictly adhering to general benchmarks.
+
