@@ -83,6 +83,21 @@ def group_team_data(df):
     return result.sort("Tm")
 
 
+def save_to_markdown(df):
+    """save summary report to markdown"""
+    markdown_table1, markdown_table2 = generalise_data(df)
+    markdown_table1 = str(markdown_table1)
+    markdown_table2 = str(markdown_table2)
+    # Write the markdown table to a file
+    with open("summary_report.md", "w", encoding="utf-8") as file:
+        file.write("Describe:\n")
+        file.write(markdown_table1)
+        file.write("\n\n")  # Add a new line
+        file.write("Median:\n")
+        file.write(markdown_table2)
+        file.write("\n\n")  # Add a new line
+
+
 # use the above functions to generate results:
 
 # Load the NBA data
@@ -113,6 +128,8 @@ line_graph_visualisation(
 bar_graph_visualisation(
     pivot_df, "Total Points by Team", "Team", "Total Points", "Position"
 )
+
+save_to_markdown(nba_data_file)
 
 end_time = time.time()
 execution_time = end_time - start_time
